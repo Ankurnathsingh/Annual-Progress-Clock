@@ -1,6 +1,6 @@
 {
   "name": "Time Progress",
-  "short_name": "Progress",
+  "short_name": "TimeFlow",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#0f2027",
