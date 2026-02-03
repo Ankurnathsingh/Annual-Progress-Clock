@@ -13,7 +13,7 @@ body {
   justify-content: center;
 }
 
-/* Background animation */
+/* Background */
 .background {
   position: fixed;
   inset: 0;
@@ -29,7 +29,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Floating dots */
+/* Particles */
 .particles::before {
   content: "";
   position: fixed;
@@ -45,7 +45,7 @@ body {
   to { transform: translateY(-200px); }
 }
 
-/* App Card */
+/* Card */
 .app {
   background: rgba(255,255,255,0.15);
   backdrop-filter: blur(16px);
@@ -62,7 +62,6 @@ body {
   box-shadow: 0 30px 65px rgba(0,0,0,0.4);
 }
 
-/* Clock */
 .clock h1 {
   font-size: clamp(2rem, 6vw, 3rem);
   color: #fff;
@@ -71,10 +70,8 @@ body {
 .clock p {
   color: #e0e0e0;
   margin-bottom: 1.4rem;
-  font-size: clamp(0.9rem, 3vw, 1rem);
 }
 
-/* Progress bar */
 .progress-bar {
   width: 100%;
   height: 18px;
@@ -102,27 +99,16 @@ body {
   color: #fff;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  font-size: clamp(0.9rem, 3vw, 1rem);
 }
 
-/* Stats */
 .stats p {
   color: #f1f1f1;
-  font-size: clamp(0.85rem, 3vw, 0.95rem);
+  font-size: 0.95rem;
 }
 
-/* Quote */
 .quote {
   margin-top: 1.2rem;
   font-style: italic;
   color: #ffffff;
   opacity: 0.85;
-  font-size: clamp(0.9rem, 3vw, 1rem);
-}
-
-/* Extra safety for tiny screens */
-@media (max-height: 500px) {
-  .app {
-    padding: 1rem;
-  }
 }
