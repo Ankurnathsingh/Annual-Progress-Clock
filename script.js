@@ -1,3 +1,10 @@
+window.addEventListener("load", () => {
+  const splash = document.getElementById("splash");
+  setTimeout(() => {
+    splash.classList.add("hidden");
+  }, 800); // splash visible for ~0.8s
+});
+
 function isLeapYear(year) {
   return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 }
