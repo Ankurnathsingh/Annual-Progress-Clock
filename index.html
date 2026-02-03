@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Year Progress</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background"></div>
+  <div class="particles"></div>
+
+  <div class="app">
+    <div class="clock">
+      <h1 id="time">00:00:00</h1>
+      <p id="date">Loading...</p>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <p id="progressText">0% of the year completed</p>
+    </div>
+
+    <div class="stats">
+      <p id="dayOfYear"></p>
+      <p id="daysRemaining"></p>
+    </div>
+
+    <div class="quote">Make today count ✨</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
