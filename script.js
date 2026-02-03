@@ -5,11 +5,9 @@ function isLeapYear(year) {
 function updateClockAndProgress() {
   const now = new Date();
 
-  // Time
   document.getElementById("time").textContent =
     now.toLocaleTimeString("en-GB");
 
-  // Date
   document.getElementById("date").textContent =
     now.toLocaleDateString("en-GB", {
       weekday: "long",
