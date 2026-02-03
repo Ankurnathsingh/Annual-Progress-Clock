@@ -112,3 +112,68 @@ body {
   color: #ffffff;
   opacity: 0.85;
 }
+/* Splash Screen */
+#splash {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(120deg, #0f2027, #2c5364, #00c6ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  color: white;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#splash.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Logo */
+.splash-logo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.splash-logo .ring {
+  width: 100%;
+  height: 100%;
+  border: 6px solid rgba(255,255,255,0.3);
+  border-top-color: #00ffd5;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}
+
+.splash-logo .hands {
+  position: absolute;
+  width: 6px;
+  height: 30px;
+  background: white;
+  top: 20px;
+  left: 50%;
+  transform-origin: bottom;
+  animation: tick 1s infinite steps(1);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes tick {
+  0% { transform: translateX(-50%) rotate(0deg); }
+  100% { transform: translateX(-50%) rotate(360deg); }
+}
+
+#splash h1 {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#splash p {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
